@@ -59,17 +59,17 @@ def stats(update, context):
 
 def start(update, context):
     buttons = ButtonMaker()
-    buttons.buildbutton("Repo", "https://www.github.com/anasty17/mirror-leech-telegram-bot")
-    buttons.buildbutton("Report Group", "https://t.me/+PRRzqHd31XY3ZWZk")
+    buttons.buildbutton("Owner", "https://t.me/XdaAbhi")
+    buttons.buildbutton("Report Group", "https://t.me/mimix2chiron")
     reply_markup = InlineKeyboardMarkup(buttons.build_menu(2))
     if CustomFilters.authorized_user(update) or CustomFilters.authorized_chat(update):
         start_string = f'''
 Hello, master i can do whatever you want !
-Type /{BotCommands.HelpCommand} to get a list of available commands
+Type /{BotCommands.HelpCommand} to get pleasurable service👙
 '''
         sendMarkup(start_string, context.bot, update.message, reply_markup)
     else:
-        sendMarkup('Not Authorized user, deploy your own mirror-leech bot', context.bot, update.message, reply_markup)
+        sendMarkup('Not Authorized user, Fuckout You dick Head', context.bot, update.message, reply_markup)
 
 def restart(update, context):
     restart_message = sendMessage("⚙️reset and rebooting..", context.bot, update.message)
